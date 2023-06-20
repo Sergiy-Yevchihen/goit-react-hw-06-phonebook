@@ -8,7 +8,7 @@ export const FormInput = styled.form`
   gap: 20px;
   margin-bottom: 20px;
   padding: 10px;
-  border: 2px solid #616161;
+  border: 1px solid #616161;
   border-radius: 4px;
   box-shadow: 1px 2px 2px rgb(0 0 0 / 0.5);
   color: #757575;
@@ -19,16 +19,17 @@ export const LabelForm = styled.label`
   flex-direction: column;
   gap: 5px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   font-family: inherit;
-  color: #616161;
+  color: #111;
 `;
 
 export const InputForm = styled.input`
-  min-width: 220px;
+
+  min-width: 300px;
   padding: 5px 5px;
   border: 1px solid #616161;
-  border-radius: 3px;
+  border-radius: 10px;
   outline: none;
   cursor: pointer;
 
