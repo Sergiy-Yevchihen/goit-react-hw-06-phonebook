@@ -4,14 +4,14 @@ export const FormInput = styled.form`
   width: 400px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: centr;
   gap: 20px;
   margin-bottom: 20px;
   padding: 10px;
-  border: 2px solid ${p => p.theme.colors.dark};
+  border: 2px solid #616161;
   border-radius: 4px;
-  box-shadow: ${p => p.theme.colors.shadow};
-  color: ${p => p.theme.colors.grey};
+  box-shadow: 1px 2px 2px rgb(0 0 0 / 0.5);
+  color: #757575;
 `;
 
 export const LabelForm = styled.label`
@@ -21,27 +21,27 @@ export const LabelForm = styled.label`
   font-size: 20px;
   font-weight: 600;
   font-family: inherit;
-  color: ${p => p.theme.colors.dark};
+  color: #616161;
 `;
 
 export const InputForm = styled.input`
   min-width: 220px;
   padding: 5px 5px;
-  border: 1px solid ${p => p.theme.colors.dark};
+  border: 1px solid #616161;
   border-radius: 3px;
   outline: none;
   cursor: pointer;
 
   :hover {
-    border-color: ${p => p.theme.colors.accent};
-    box-shadow: ${p => p.theme.colors.shadow};
+    border-color: #3498db;
+    box-shadow: 1px 2px 2px rgb(0 0 0 / 0.5);
   }
 `;
 
 export const ButtonForm = styled.button`
   min-width: 110px;
   padding: 5px;
-  border: 1px solid ${p => p.theme.colors.dark};
+  border: 1px solid #616161;
   border-radius: 4px;
   text-align: center;
   font-size: 16px;
@@ -49,22 +49,22 @@ export const ButtonForm = styled.button`
   font-family: inherit;
   cursor: pointer;
   outline: none;
-  color: ${p => p.theme.colors.dark};
-  box-shadow: ${p => p.theme.colors.shadow};
-  background-color: ${p => p.theme.colors.accent};
+  color: #616161;
+  box-shadow: 1px 2px 2px rgb(0 0 0 / 0.5);
+  background-color: #4cd964;
 
   transition: box-shadow 250ms ease-in-out, color 250ms ease-in-out,
     border 250ms ease-in-out;
 
   :disabled {
-    background-color: ${p => p.theme.colors.noActive};
+    background-color: #e0e0e0;
     box-shadow: none;
-    color: ${p => p.theme.colors.white};
+    color: #fff;
   }
 
   :enabled:hover {
-    border: 1px solid ${p => p.theme.colors.white};
-    box-shadow: ${p => p.theme.colors.shadowAccent};
-    color: ${p => p.theme.colors.white};
+    border: 1px solid #fff;
+    box-shadow: 2px 5px 2px rgb(0 0 0 / 0.5);
+    color: #fff;
   }
 `;

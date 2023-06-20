@@ -7,16 +7,16 @@ export const Container = styled.div`
 `;
 
 export const TitleForm = styled.h2`
-  color: ${p => p.theme.colors.grey};
+  color: #757575;
   margin-bottom: 20px;
 `;
 
 export const TitleContacts = styled.h2`
-  color: ${p => p.theme.colors.grey};
+  color: #757575;
   margin-bottom: 20px;
 `;
 
 export const Info = styled.h2`
-  color: ${p => p.theme.colors.grey};
+  color: #757575;
   margin-bottom: 20px;
 `;

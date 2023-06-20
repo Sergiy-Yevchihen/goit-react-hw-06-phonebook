@@ -12,19 +12,19 @@ export const LabelForm = styled.label`
   font-size: 20px;
   font-weight: 600;
   font-family: inherit;
-  color: ${p => p.theme.colors.dark};
+  color: #616161;
 `;
 
 export const InputForm = styled.input`
   min-width: 220px;
   padding: 5px 5px;
-  border: 1px solid ${p => p.theme.colors.dark};
+  border: 1px solid #616161;
   border-radius: 3px;
   outline: none;
   cursor: pointer;
 
   :hover {
-    border-color: ${p => p.theme.colors.accent};
-    box-shadow: ${p => p.theme.colors.shadow};
+    border-color: #3498db;
+    box-shadow: shadow: '1px 2px 2px rgb(0 0 0 / 0.5);
   }
 `;

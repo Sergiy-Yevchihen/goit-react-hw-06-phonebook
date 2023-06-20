@@ -13,14 +13,14 @@ export const ItemContacts = styled.li`
   justify-content: flex-start;
   gap: 5px;
   font-size: 20px;
-  color: ${p => p.theme.colors.dark};
+  color: #616161;
 `;
 
 export const ButtonDelete = styled.button`
   min-width: 60px;
   padding: 2px;
   margin-left: auto;
-  border: 1px solid ${p => p.theme.colors.dark};
+  border: 1px solid #616161;
   border-radius: 4px;
   text-align: center;
   font-size: 12px;
@@ -28,16 +28,16 @@ export const ButtonDelete = styled.button`
   font-family: inherit;
   cursor: pointer;
   outline: none;
-  color: ${p => p.theme.colors.dark};
-  box-shadow: ${p => p.theme.colors.shadow};
-  background-color: ${p => p.theme.colors.accent};
+  color: #616161;
+  box-shadow: 1px 2px 2px rgb(0 0 0 / 0.5;
+  background-color: #3498db;
 
   transition: box-shadow 250ms ease-in-out, color 250ms ease-in-out,
     border 250ms ease-in-out;
 
   :hover {
-    border: 1px solid ${p => p.theme.colors.white};
-    box-shadow: ${p => p.theme.colors.shadowAccent};
-    color: ${p => p.theme.colors.white};
+    border: 1px solid #fff;
+    box-shadow: 1px 2px 2px rgb(0 0 0 / 0.5;
+    color: #fff;
   }
 `;
