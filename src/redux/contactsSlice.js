@@ -3,8 +3,7 @@ import { createSlice, nanoid } from '@reduxjs/toolkit';
 import { persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 const initialState = {
   contacts: [],
@@ -17,20 +16,10 @@ const contactsSlice = createSlice({
   reducers: {
     addContact: {
       reducer(state, action) {
-        const duplicate = state.contacts.some(
-          contact =>
-            contact.name.toLowerCase() ===
-            action.payload.name.toLowerCase().trim()
-        );
-
-        if (duplicate) {
-          toast.warn(`${action.payload.name} is already in contacts.`, {
-            theme: 'colored',
-          });
-        } else {
-          state.contacts.push(action.payload);
-        }
+        state.contacts.push(action.payload);
       },
+        
+     
       prepare({ name, number }) {
         return {
           payload: {

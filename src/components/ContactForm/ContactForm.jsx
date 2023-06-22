@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contactsSlice';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 import {
   FormInput,
@@ -13,7 +15,7 @@ const ContactForm = () => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const dispatch = useDispatch();
-
+  const contacts = useSelector(state => state.contacts.contacts);
   const handleChange = e => {
     const { name, value } = e.currentTarget;
 
@@ -26,7 +28,18 @@ const ContactForm = () => {
 
   const handleSubmitForm = e => {
     e.preventDefault();
-    dispatch(addContact({ name, number }));
+
+    const duplicate = contacts.some(
+          contact =>
+            contact.name.toLowerCase() ===
+            name.toLowerCase().trim()
+    );
+    
+    if (duplicate) {
+      alert (`${name} is already in contacts.`);
+    } else {
+      dispatch(addContact({ name, number }));
+    }
     reset();
   };
 
